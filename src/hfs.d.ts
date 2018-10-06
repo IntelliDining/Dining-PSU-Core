@@ -42,7 +42,7 @@ type MealName = 'Breakfast' | 'Lunch' | 'Dinner' | 'Dinner/Late Night';
 
 interface MenuItem {
     id: number;
-    date: string;
+    serveDate: string;
     mealNumber: 1 | 2 | 3 | 4;
     mealName: MealName;
     locationNumber: number;
@@ -67,23 +67,23 @@ interface MenuItem {
     calories: string;
     caloriesFromFat: string;
     totalFat: string;
-    totalFatDV: string;
+    totalFatDv: string;
     satFat: string;
-    satFatDV: string;
+    satFatDv: string;
     transFat: string;
-    transFatDV: string;
+    transFatDv: string;
     cholesterol: string;
-    cholesterolDV: string;
+    cholesterolDv: string;
     sodium: string;
-    sodiumDV: string;
+    sodiumDv: string;
     totalCarb: string;
-    totalCarbDV: string;
+    totalCarbDv: string;
     dietaryFiber: string;
-    dietaryFiberDV: string;
+    dietaryFiberDv: string;
     sugars: string;
-    sugarsDV: string;
+    sugarsDv: string;
     protein: string;
-    proteinDV: string;
+    proteinDv: string;
 }
 
 type Menu = {[meal: string]: {[place: string]: MenuItem[]}};

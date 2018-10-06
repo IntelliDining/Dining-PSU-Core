@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
+    target: 'node',
     entry: './src/index.ts',
     module: {
         rules: [
@@ -13,7 +14,10 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ]
+        extensions: [ '.tsx', '.ts', '.js' ],
+        alias: {
+            'node-fetch$': "node-fetch/lib/index.js"
+        }
     },
     output: {
         filename: 'bundle.js',

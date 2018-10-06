@@ -4,12 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack && node ./dist/bundle.js"
   },
   "devDependencies": {
+    "@types/webpack": "^4.4.14",
     "ts-loader": "^5.2.1",
     "typescript": "^3.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.1.2",
+    "isomorphic-unfetch": "^3.0.0"
   }
 }
